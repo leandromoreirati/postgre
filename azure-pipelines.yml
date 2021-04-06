@@ -8,9 +8,12 @@ pool:
   #name: self
   vmImage: ubuntu-16.04
 
+variables:
+- group: postgresql
+
 stages:
 - stage: Build
-  displayName: Build image
+  displayName: Build and Push Image
   jobs:
   - job: Build
     displayName: Build
