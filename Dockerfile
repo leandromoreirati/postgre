@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM debian:buster-slim
+FROM leandromoreirajfa/debian:buster-slim
 
 RUN set -ex; \
 	if ! command -v gpg > /dev/null; then \
