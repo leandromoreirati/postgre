@@ -8,10 +8,6 @@ pool:
   #name: self
   vmImage: ubuntu-16.04
 
-name: 
-variables:
-- group: sonarqube
-
 stages:
 - stage: Build
   displayName: Build image
