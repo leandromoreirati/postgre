@@ -24,7 +24,7 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         containerRegistry: 'docker_hub'
-        repository: 'postgres'
+        repository: 'leandromoreirajfa/postgres'
         tags: |
           $(tag)
     - task: Docker@2
@@ -32,6 +32,6 @@ stages:
       inputs:
         command: push
         containerRegistry: 'docker_hub'
-        repository: 'postgres'
+        repository: 'leandromoreirajfa/postgres'
         tags: |
           $(tag)
